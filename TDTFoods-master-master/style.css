@@ -1,6 +1,6 @@
 body {
   font-family: "Quicksand", sans-serif;
-  background: lightgray;
+  /* background: lightgray; */
 }
 * {
   padding: 0;
@@ -14,13 +14,13 @@ ul {
 a {
   text-decoration: none;
 }
-/* .main_hero{
-  max-width: 1000px;
+.main_hero1 {
+  max-width: 1200px;
   margin: 0 auto;
-} */
-container {
-  margin-left: 2rem;
 }
+/* /container {
+  margin-left: 5px;
+} */
 .main_hero:first-child {
   flex-basis: 50%;
 }
@@ -69,4 +69,94 @@ button {
   background-color: rgb(69, 145, 69);
   outline: none;
   border: none;
+}
+.Categories {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fruit {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+a {
+  color: #3bb77e;
+}
+.fruits_section {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.fruits_section div {
+  text-align: center;
+  padding: 11px 15px;
+  background-color: #c52222;
+}
+.fruits_section > div > p {
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  .main_hero {
+    display: block;
+  }
+  .hero_first_section {
+    flex-basis: 100%;
+    padding: 1.5rem;
+  }
+  .main_hero:last-child {
+    flex-basis: 100%;
+  }
+  .Categories {
+    padding: 0 1.5rem;
+    display: block;
+  }
+  .Categories > div {
+    margin-bottom: 10px;
+    /* background-color: red; */
+  }
+  .fruits_section {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .fruits_section > div {
+    background-color: rgb(242, 135, 135);
+    padding: 35px 15px;
+  }
+}
+.second_fruit_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+
+  /* background-color: white; */
+}
+.second_fruit_section div {
+  margin-bottom: 14px;
+  padding: 0px 0px 0px 10px;
+  background-color: white;
+  border: 6px 2px 2px solid gray;
+}
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h3 {
+  margin-bottom: 3px;
+}
+h4 {
+  margin-bottom: 6px;
+}
+.second_fruit_section > div > small {
+  padding-bottom: 8px;
+  /* background-color: red; */
+}
+span {
+  color: #3bb77e;
+  padding-right: 4px;
 }
