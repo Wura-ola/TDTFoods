@@ -127,6 +127,12 @@ a {
     background-color: rgb(242, 135, 135);
     padding: 35px 15px;
   }
+  .second_fruit_section {
+    display: block;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    background-color: red;
+  }
 }
 .second_fruit_section {
   display: grid;
