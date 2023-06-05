@@ -26,17 +26,7 @@ a {
   flex-basis: 50%;
   /* position: absolute; */
 }
-.hero_container img {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* position: absolute; */
-}
-.main_hero:first-child {
-  /* position: relative; */
-  /* background-color: #838383; */
-}
+
 .hero_container {
   background-color: #c5ead9;
 }
@@ -70,7 +60,7 @@ input {
 }
 button {
   padding: 10px 2rem;
-  background-color: rgb(69, 145, 69);
+  background-color: #3bb77e;
   outline: none;
   border: none;
 }
@@ -88,16 +78,43 @@ button {
 a {
   color: #3bb77e;
 }
+
+.second_fruit_section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
 .fruits_section {
   display: grid;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
 }
 .fruits_section div {
   text-align: center;
   padding: 11px 15px;
-  background-color: #c52222;
+  /* background-color: #c52222; */
+}
+.fruits_section1 {
+  background-color: #feefea;
+}
+.fruits_section2 {
+  background-color: #fff3ff;
+}
+.fruits_section3 {
+  background-color: #f2fce4;
+}
+.fruits_section4 {
+  background-color: #feefea;
+}
+.fruits_section5 {
+  background-color: #ecffec;
+}
+.fruits_section6 {
+  background-color: #fffceb;
+}
+.fruits_section7 {
+  background-color: #def9ec;
 }
 .fruits_section > div > p {
   color: black;
@@ -105,16 +122,17 @@ a {
 @media screen and (max-width: 768px) {
   .main_hero {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: flex-start;
+    align-items: center; */
   }
-  .hero_first_section {
+  /* .hero_first_section {
     flex-basis: 100%;
     padding: 1.5rem;
-  }
-  .hero_second_section {
+  } */
+  /* .hero_second_section img {
+    display: none;
     flex-basis: 100%;
-  }
+  } */
   .Categories {
     padding: 0 1.5rem;
     display: block;
@@ -128,13 +146,12 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .fruits_section > div {
-    background-color: rgb(242, 135, 135);
+    /* background-color: rgb(242, 135, 135); */
     padding: 35px 15px;
   }
-  .second_fruit_section {
-    grid-template-columns: 1fr 1fr;
-  }
+
   .offer_section_one {
+    width: 100%;
     margin-bottom: 1rem;
   }
   .offer_section {
@@ -149,6 +166,10 @@ a {
     display: flex;
     justify-content: flex-end;
   }
+  .second_fruit_section img {
+    /* background-color: red; */
+    width: 60%;
+  }
 }
 /* @media screen and (max-width: 425px) {
   .offer_section_one1 {
@@ -158,19 +179,23 @@ a {
     font-size: 12px;
   } */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 375px) {
   .offer_section_one {
     flex-direction: column-reverse;
   }
   .offer_section_two {
+    width: 100%;
     flex-direction: column-reverse;
   }
-  .fruits_section {
+  /* .fruits_section {
     padding: 1.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
+  } */
   .Categories {
+    font-size: 10px;
+  }
+  .foot {
     font-size: 10px;
   }
   .offer_section_one1 {
@@ -197,16 +222,28 @@ a {
     /* padding: 1rem 0rem 0rem 1rem; */
     text-align: center;
   }
+  .second_fruit_section {
+    padding: 1.5rem;
+  }
+  .second_fruit_section img {
+    /* background-color: red; */
+    /* width: 50%; */
+  }
 }
-.second_fruit_section {
+.second_fruit_section img {
+  /* background-color: red; */
+  /* width: 100%; */
+}
+
+/* .second_fruit_section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 0.5rem;
-}
+} */
 .second_fruit_section div {
   margin-bottom: 14px;
-  padding: 0px 0px 0px 10px;
-  background-color: white;
+  padding: 0px 10px 0px 10px;
+  background-color: rgb(243, 25, 25);
 }
 .foot {
   display: flex;
@@ -244,7 +281,7 @@ span {
 .p {
   color: white;
   padding: 5px 5px;
-  background-color: rgb(226, 186, 100);
+  background-color: #ffd480;
   margin-bottom: 1rem;
 }
 .pp {
@@ -271,28 +308,13 @@ span {
 .offer_section_two h3 {
   margin-bottom: 7px;
 }
-.offer_section_one1 {
-  /* background-color: red; */
-  /* width: 50%; */
-}
-.offer_section_one2 {
-  /* width: 50%; */
-  /* background-color: rebeccapurple; */
-}
-.offer_section_two1 {
-  /* background-color: #c52222; */
-  /* flex-basis: 50%; */
-}
-.offer_section_two2 {
-  /* background-color: rebeccapurple; */
-  /* width: 50%; */
-}
+
 .button {
   border-radius: 2px;
   color: white;
   margin-top: 3.5rem;
   padding: 10px 1rem;
-  background-color: rgb(69, 145, 69);
+  background-color: #3bb77e;
   outline: none;
   border: none;
 }
@@ -301,7 +323,7 @@ span {
   color: white;
   margin-top: 3.5rem;
   padding: 10px 1.5rem;
-  background-color: rgb(69, 145, 69);
+  background-color: #3bb77e;
   outline: none;
   border: none;
 }

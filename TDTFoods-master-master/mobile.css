@@ -48,10 +48,6 @@ a {
   border-bottom: 1px lightgrey solid;
 }
 
-.container__parent > div:nth-child(1) img {
-  /* width: 150px; */
-}
-
 .container__mobile {
   display: none;
 }
