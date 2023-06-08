@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: "Quicksand", sans-serif;
   background: lightgray;
 }
@@ -189,7 +189,6 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-  /* padding-top: 10px; */
 }
 .container__navigation > div:nth-child(1) {
   background-color: #3bb77e;
@@ -244,7 +243,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* gap: 70px; */
 }
 .container__navigation > div:nth-child(2) > ul li a {
   display: flex;
@@ -293,15 +291,12 @@ a {
     left: 0;
     z-index: 1000;
     background: #fff;
-    /* backdrop-filter: blur(15px); */
   }
 
   .container__parent__mobile > div:first-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /* padding-top: 50px; */
   }
 
   .container__parent__mobile > div:last-child {
@@ -450,4 +445,4 @@ a {
     display: flex;
     height: 50px;
   }
-}
+} */
