@@ -29,6 +29,7 @@ a {
   background-color: #c5ead9;
 }
 .indicator {
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
 }
@@ -69,7 +70,8 @@ button {
   border: none;
 }
 .Categories {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -414,6 +416,7 @@ span {
   justify-content: space-between;
   align-items: center;
 }
+
 .best_sells {
   margin: 2rem 0;
   display: flex;
@@ -478,4 +481,48 @@ span {
 }
 .main_second_fruit_section img {
   width: 100%;
+}
+.rating_section {
+  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.top_sells > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.top_rated > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.trending_items > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.recently_added > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.rating_img {
+  padding: 11px 15px;
+  background-color: #f4f6fa;
+}
+.rated {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0px;
+  /* border-bottom: 3px solid #3bb77e; */
+  text-transform: capitalize;
 }
