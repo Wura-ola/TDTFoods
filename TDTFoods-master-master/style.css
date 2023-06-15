@@ -89,18 +89,21 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
+  margin-bottom: 3rem;
 }
 
 .second1_fruit_section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
+  margin-bottom: 3rem;
 }
 .fruits_section {
   display: grid;
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   gap: 10px;
+  margin-bottom: 3rem;
 }
 .fruits_section div {
   text-align: center;
@@ -487,42 +490,66 @@ span {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-.top_sells > div {
+.seconds {
+  margin-top: 2rem;
+  /* background-color: #838383; */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+/* 
+.seconds {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.top_rated > div {
+.seconds {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.trending_items > div {
+.seconds {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
-}
-
-.recently_added > div {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
+} */
 .rating_img {
   padding: 11px 15px;
   background-color: #f4f6fa;
 }
+@media screen and (max-width: 768px) {
+  .rating_section {
+    padding: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 426px) {
+  .rating_section {
+    grid-template-columns: 1fr;
+  }
+  .rating_img {
+    padding: 15px 20px;
+    background-color: #f4f6fa;
+  }
+}
+
 .rated {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 2rem 0px;
-  /* border-bottom: 3px solid #3bb77e; */
+  flex-direction: column;
+  gap: 10px;
+  /* margin: 2rem 0px; */
+  /* font-size: 14px; */
+  /* margin-top: 4px; */
   text-transform: capitalize;
+}
+.border {
+  width: 30%;
+  border-bottom: 2.5px solid #3bb77e;
 }
