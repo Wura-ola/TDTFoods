@@ -1,35 +1,43 @@
-const searchQuery = document.querySelector(".searchQuery");
+const email = document.getElementById("#email");
+console.log(email);
+// if (document.email.email.value == "") {
+//   alert("Please provide your name!");
+//   document.myForm.Name.focus();
+//   return false;
+// }
 
-const after = document.querySelector(".after");
-const aftermobile = document.querySelector(".aftermobile");
+// const searchQuery = document.querySelector(".searchQuery");
 
-console.log("fater", aftermobile);
+// const after = document.querySelector(".after");
+// const aftermobile = document.querySelector(".aftermobile");
 
-searchQuery.addEventListener("mouseover", () => {
-  after.classList.add("slide");
-  aftermobile.style.visibility = "hidden";
-});
+// console.log("fater", aftermobile);
 
-searchQuery.addEventListener("mouseout", () => {
-  after.classList.remove("slide");
-  //   after.classList.add("slideOut");
-});
+// searchQuery.addEventListener("mouseover", () => {
+//   after.classList.add("slide");
+//   aftermobile.style.visibility = "hidden";
+// });
 
-const hambugger = document.querySelector(".hambugger");
-const container__navigation = document.querySelector(".container__navigation");
-const icon = document.querySelector(".icon");
-const bars = document.querySelector(".bars");
+// searchQuery.addEventListener("mouseout", () => {
+//   after.classList.remove("slide");
+//   //   after.classList.add("slideOut");
+// });
 
-const mobilecontainer = document.querySelector(".mobilecontainer");
+// const hambugger = document.querySelector(".hambugger");
+// const container__navigation = document.querySelector(".container__navigation");
+// const icon = document.querySelector(".icon");
+// const bars = document.querySelector(".bars");
 
-hambugger.addEventListener("click", () => {
-  if (mobilecontainer.classList.contains("hide")) {
-    mobilecontainer.classList.remove("hide");
-    icon.classList.remove("icon");
-    bars.classList.add("show");
-  } else {
-    mobilecontainer.classList.add("hide");
-    icon.classList.add("icon");
-    bars.classList.remove("show");
-  }
-});
+// const mobilecontainer = document.querySelector(".mobilecontainer");
+
+// hambugger.addEventListener("click", () => {
+//   if (mobilecontainer.classList.contains("hide")) {
+//     mobilecontainer.classList.remove("hide");
+//     icon.classList.remove("icon");
+//     bars.classList.add("show");
+//   } else {
+//     mobilecontainer.classList.add("hide");
+//     icon.classList.add("icon");
+//     bars.classList.remove("show");
+//   }
+// });
